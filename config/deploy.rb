@@ -20,6 +20,7 @@ default_run_options[:pty] = true
 desc "Symlinks database.yml, mailer.yml file from shared directory into the latest release"
 task :symlink_shared, :roles => [:app, :db] do
   run "ln -s #{shared_path}/config/database.yml #{latest_release}/config/database.yml"
+  run "ln -s #{shared_path}/config/secrets.yml #{latest_release}/config/secrets.yml"
 #  run "ln -s #{shared_path}/system #{latest_release}/system"
 #  run "ln -s #{shared_path}/public/system/attaches #{latest_release}/public/system/attaches"
 end
