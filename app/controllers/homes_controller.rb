@@ -6,10 +6,10 @@ class HomesController < ApplicationController
 
   def create
     name = params[:name]
-    email = params[:email]
+    email_id = params[:email]
     phone = params[:phone]
     comments = params[:comments]
-    ContactMailer.contact(name, email, phone, comments).deliver
+    ContactMailer.contact(name, email_id, phone, comments).deliver
     respond_to do |format|
       format.html {
         flash[:notice] = "Thanks for your interest in Rising Sun United !"

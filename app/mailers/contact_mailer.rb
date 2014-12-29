@@ -1,11 +1,11 @@
 class ContactMailer < ActionMailer::Base
   default from: "from@example.com"
 
-  def contact(name, email, phone, comments)
+  def contact(name, email_id, phone, comments)
     @name = name
-    @email = email
+    @email_id = email_id
     @phone = phone
     @comments = comments
-    mail(:to =>"shivraj@dine-media.com", :subject => "Contact Us")
+    mail(:to =>"swati.khosya@gmail.com", :subject => "Contact Us Info")
   end
 end
