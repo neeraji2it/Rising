@@ -1,0 +1,7 @@
+<%= form_tag( "/homes", :method => "post", :remote => true) do %>
+  <%= text_field_tag :name, nil, :placeholder => "Name", :id => "name", :required => true %>
+  <%= email_field_tag :email, nil, :placeholder => "Email", :id => "email", :required => true %>
+  <%= text_field_tag :phone, nil, :placeholder => "Phone", :id => "phone", :required => true %>
+  <%= text_area_tag :comments, nil, :placeholder => "Comments", :id => "comments", :required => true %>
+  <%= submit_tag "Submit" %>
+<% end %>

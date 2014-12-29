@@ -182,13 +182,9 @@
       
       <div class="two_thirds scroll-animate left">
         <div id="message"></div>
-        <form method="post" action="http://www.madeinebor.com/tides/sendemail.php" id="contactform">
-          <input type="text" name="name" id="name" placeholder="Name" />
-          <input type="text" name="email" id="email" placeholder="Email" />
-          <input type="text" name="phone" id="phone" placeholder="Phone" />
-          <textarea name="comments" id="comments" placeholder="Comments"></textarea>
-          <input type="submit" name="submit" value="Submit" />
-        </form>
+        
+        <%= render :partial => "contact" %>
+
       </div>
       
       <div class="one_third last scroll-animate right" style="color:#000; ">
