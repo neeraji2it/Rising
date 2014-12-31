@@ -6,6 +6,6 @@ class ContactMailer < ActionMailer::Base
     @email_id = email_id
     @phone = phone
     @comments = comments
-    mail(:to =>"crystal.badu@gmail.com", :subject => "Contact Us Info")
+    mail(:to =>"risingsun.united@gmail.com", :subject => "Contact Us Info")
   end
 end
