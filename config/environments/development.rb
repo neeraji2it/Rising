@@ -32,13 +32,14 @@ Rails.application.configure do
   # Raises helpful error messages.
   config.assets.raise_runtime_errors = true
   
+  config.action_mailer.default_url_options = { host: 'localhost:3000' }
   config.action_mailer.delivery_method = :smtp
   ActionMailer::Base.smtp_settings = {
     :enable_starttls_auto => true,
     :address => 'smtp.gmail.com',
     :port => '587',
-    :user_name => 'oe.member1@gmail.com',
-    :password => '0nlineeduc@ti0n',
+    :user_name => 'sunrisingunited@gmail.com',
+    :password => 'risingsun@123',
     :authentication => 'plain'
   }
 end
