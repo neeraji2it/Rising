@@ -340,7 +340,7 @@ header * {
 	color: rgb(51, 51, 51); text-transform: uppercase; ; font-family:"Times New Roman", Times, serif}
 
 #selectnav li a.active, #selectnav li a:hover {
-	color: rgb(204, 204, 204);
+	color:#3171bf;
 }
 
 .header-small #selectnav {
