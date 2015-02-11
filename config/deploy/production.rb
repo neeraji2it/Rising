@@ -8,7 +8,7 @@
 # set :use_sudo, false
 
 
-set :domain, "23.92.65.127"
+set :domain, "23.92.65.129"
 set :rails_env, 'production'
 set :gitrepo, "git@github.com:neeraji2it/Rising.git"
 set :deploydir, "/var/www/rising.com/public_html"
