@@ -21,6 +21,8 @@ desc "Symlinks database.yml, mailer.yml file from shared directory into the late
 task :symlink_shared, :roles => [:app, :db] do
   run "ln -s #{shared_path}/config/database.yml #{latest_release}/config/database.yml"
   run "ln -s #{shared_path}/config/secrets.yml #{latest_release}/config/secrets.yml"
+  run "ln -s #{shared_path}/payments #{latest_release}/public/payments"
+  run "ln -s #{shared_path}/payments/tokens.rb #{latest_release}/config/initializers/tokens.rb" 
 #  run "ln -s #{shared_path}/system #{latest_release}/system"
 #  run "ln -s #{shared_path}/public/system/attaches #{latest_release}/public/system/attaches"
 end
