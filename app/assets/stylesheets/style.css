@@ -72,7 +72,7 @@ p {
 }
 
 .buy-now{border:1px solid #15aeec; -webkit-border-radius: 3px; -moz-border-radius: 3px;border-radius: 3px;font-size:12px;font-family:arial, helvetica, sans-serif; padding: 10px 10px 10px 10px; text-decoration:none; display:inline-block;text-shadow: -1px -1px 0 rgba(0,0,0,0.3);font-weight:bold; color: #FFFFFF;
- background-color: #FF8000;
+ background-color: #FF8000; 
  width:50%;
 padding: 18px;
 font-size: 20px;
@@ -155,7 +155,7 @@ pre code {
 }
 
 input, textarea, #load-more {
-	width: 100%; background: none; border: 1px solid #e5e5e5; padding: 12px 15px; box-shadow: 0 1px 1px #eaeaea, inset 0 1px 0 #fbfbfb; font-size: 14px; background: #fff;
+	width: 100%; background: none; border: 2px solid #FF8000;  padding: 12px 15px; box-shadow: 0 1px 1px #eaeaea, inset 0 1px 0 #fbfbfb; font-size: 14px; background: #fff;
 }
 
 input {
@@ -167,11 +167,20 @@ input:focus, textarea:focus, input[type="submit"]:hover {
 }
 
 input[type="submit"] {
-	width: auto; cursor: pointer; color: #a7a7a7;
+	  width: auto;
+  cursor: pointer;
+  color: #fff;
+  background: #FF8000;
+  box-shadow: none;
+  font-weight: bold;
+  font-family: times-new-roman;
 }
 
 input[type="submit"]:hover {
-	color: #666;
+	  color: #fff;
+  background: #238adb;
+  padding: 20px;
+  border:none
 }
 
 textarea {
